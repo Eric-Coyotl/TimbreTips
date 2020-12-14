@@ -1,0 +1,19 @@
+Work in progress audio project
+
+Currently allows for users to record/import their own audio files and visualize them
+using spectrograms, waveforms, and chromagrams by turning them into their own
+'WaveObjects'.
+Also equipped with a stereo to mono audio file function that are required for some of the plots.
+
+The spectrogram function was inspired and heavily based on https://github.com/musikalkemist/AudioSignalProcessingForML
+Uses Short-Time Fourier Transform to do so.
+
+Currently WaveObjects require a pitch to be constructed this is to help analyze the sound and
+plot only a few waveforms of the object for convenience of the user.
+
+Chromagram plotter is taken from librosa library.
+
+Long term goal is to be able to take clean audio samples of instruments
+in order to compare them with pre-existing samples and try and reach a 
+desired timbre/tone by giving tips and hints based off the audio analysis
+of the audio. Preferably in a real-time context.
